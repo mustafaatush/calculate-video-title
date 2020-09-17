@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 public class Main1 {
     static long totalTime = 0;
     static TreeSet<String> videos = new TreeSet<>();
+
+    //how many second do you want to spend?
     static int estimatedLearningSecond = 180 * 60;
 
     public static void main(String[] args) {
