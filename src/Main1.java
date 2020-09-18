@@ -9,7 +9,7 @@ public class Main1 {
     static TreeSet<String> videos = new TreeSet<>();
 
     //how many second do you want to spend?
-    static int estimatedLearningSecond = 180 * 60;
+    static int estimatedLearningSecond = 60 * 60;
 
     public static void main(String[] args) {
 //        File f = new File("/Users/mustafaatush/Google Drive/01 Dart入门实战教程/");
@@ -44,6 +44,7 @@ public class Main1 {
                             " estimated file is " + videoTitle);
                 } else {
                     showFormalizedTime(learnEpisodeTotalTime - getTime(videoTitle));
+                    learnEpisodesTitle.pollLast();
                     System.out.println(
                             " estimated file is " + learnEpisodesTitle.last());
                 }
